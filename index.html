@@ -4,8 +4,27 @@
     <title>Heheeee
     </title>
     <body>
-      <script src="index.js"></script>
+     <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyA3RzFyFWbdGMmCfuzU-MbTKgUzjF6wBGs",
+    authDomain: "augt-5f8ec.firebaseapp.com",
+    projectId: "augt-5f8ec",
+    storageBucket: "augt-5f8ec.appspot.com",
+    messagingSenderId: "931126503867",
+    appId: "1:931126503867:web:e71df51901d7a1acdafc9e"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
       <button onclick = "githubSignin()">Github Signin</button>
 <button onclick = "githubSignout()">Github Signout</button>
+      <script src="index.js"></script>
     </body>
     </html>
